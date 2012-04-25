@@ -23,11 +23,11 @@
 <title>Index</title>
 </head>
 <body>
-<p>Hello Index !!!</p>
+<p>西田歯科クリニック　只今HP作成中</p>
 <div id="container" class="headerphoto">
-  <img src="images/1.jpg" width="760" height="200" alt="" />
-  <img src="images/2.jpg" width="760" height="200" alt="" />
-  <img src="images/3.jpg" width="760" height="200" alt="" />
+  <img src="images/nishida_A1.jpg" width="1000" height="800" alt="" />
+  <img src="images/nishida02.jpg" width="500" height="400" alt="" />
+  <img src="images/nishida01.jpg" alt="" />
 </div>
 </body>
 </html>
