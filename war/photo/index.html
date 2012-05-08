@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>Vivid Photo</title>
+<link rel="stylesheet" href="css/style.css" type="text/css"
+    media="screen" />
+<link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css"
+    media="all" />
+<!--[if IE]>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+ <script type="text/javascript" src="js/pop-ups.js"></script>
+ <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+ <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+ <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+ <script type="text/javascript" src="js/cufon.js"></script><script type="text/javascript" src="js/Quicksand_Book_400.font.js"></script><script type="text/javascript" src="js/functions.js"></script><![endif]-->
+</head>
+<body>
+    <div id="main" class="main">
+        <img src="images/album/1.jpg" alt="" class="preview"
+            style="display: none;" />
+        <section class="overlay"></section>
+        <header id="header">
+            <h3>西田歯科クリニック</h3>
+            <h6>
+                只今ホームページ作成中です。しばらくお待ち下さい。
+            </h6>
+        </header>
+        <div id="loading" class="loading">
+            <span>Loading...</span>
+        </div>
+        <nav>
+            <ul id="menu" class="menu">
+                <li><a href="#" id="about"> <img
+                        src="images/1.jpg" alt="" /> <span
+                        class="active"></span> <span class="wrap">
+                            <span class="link">About</span> <span
+                            class="descr">Know me</span>
+                    </span>
+                </a></li>
+                <li><a href="#" id="projects"> <img
+                        src="images/2.jpg" alt="" /> <span
+                        class="active"></span> <span class="wrap">
+                            <span class="link">Projects</span> <span
+                            class="descr">My work</span>
+                    </span>
+                </a></li>
+                <li><a href="#" id="contact"> <img
+                        src="images/3.jpg" alt="" /> <span
+                        class="active"></span> <span class="wrap">
+                            <span class="link">Contact</span> <span
+                            class="descr">Get in touch</span>
+                    </span>
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+    <ul id="nav" class="navigation footer" style="">
+        <li class="album"><span class="link" id="toggle"><span
+                class="arrow_down"></span></span>
+            <div class="wrapper thumbs_wrapper">
+                <div class="thumbs">
+                    <img src="images/album/thumbs/1.jpg"
+                        alt="images/album/1.jpg" /> <img
+                        src="images/album/thumbs/2.jpg"
+                        alt="images/album/2.jpg" /> <img
+                        src="images/album/thumbs/3.jpg"
+                        alt="images/album/3.jpg" /> <img
+                        src="images/album/thumbs/4.jpg"
+                        alt="images/album/4.jpg" /> <img
+                        src="images/album/thumbs/5.jpg"
+                        alt="images/album/5.jpg" /> <img
+                        src="images/album/thumbs/6.jpg"
+                        alt="images/album/6.jpg" /> <img
+                        src="images/album/thumbs/1.jpg"
+                        alt="images/album/1.jpg" /> <img
+                        src="images/album/thumbs/2.jpg"
+                        alt="images/album/2.jpg" /> <img
+                        src="images/album/thumbs/3.jpg"
+                        alt="images/album/3.jpg" /> <img
+                        src="images/album/thumbs/4.jpg"
+                        alt="images/album/4.jpg" /> <img
+                        src="images/album/thumbs/5.jpg"
+                        alt="images/album/5.jpg" /> <img
+                        src="images/album/thumbs/6.jpg"
+                        alt="images/album/6.jpg" />
+                </div>
+            </div></li>
+    </ul>
+    <article id="popupAbout" class="popupAbout">
+        <a id="popupAboutClose"><img src="images/close.png"
+            width="20" alt="" /></a>
+        <h1>About: Lorem Ipsum</h1>
+        <p>
+            <img src="images/200x200.png" alt="" class="image" /> 
+            西田歯科クリニックはこんなところですよ。。
+        </p>
+    </article>
+    <article id="popupProjects" class="popupProjects">
+        <a id="popupProjectsClose"><img src="images/close.png"
+            width="20" alt="" /></a>
+        <h1>Projects: Lorem Ipsum</h1>
+        <h6>Animation Studios(2005-2011)</h6>
+        <p class="nomargin">
+            <img src="images/200x150.png" alt="" class="image" />そして、、
+        </p>
+        <br />
+        <h6>Micro Computers(2000-2005)</h6>
+        <p class="nomargin">
+            <img src="images/200x150.png" alt="" class="image" />さらに、、、
+            <br />
+        </p>
+        <h6>Software Company(1995-2000)</h6>
+        <p>
+            <img src="images/200x150.png" alt="" class="image" />・・・なのです。
+            <br />
+        </p>
+    </article>
+    <article id="popupContact" class="popupContact">
+        <a id="popupContactClose"><img src="images/close.png"
+            width="20" alt="" /></a>
+        <h1>Contact: Lorem Ipsum</h1>
+        <p></p>
+        <form action="form.php" method="post">
+            <label for="name">Name:</label> <input type="text"
+                name="name" id="name" required placeholder="Name" /> <label
+                for="email">Email:</label> <input type="email"
+                name="email" id="email" required
+                placeholder="email@example.com" /> <label for="website">Website:</label>
+            <input type="url" name="website" id="website" required
+                placeholder="http://www.example.com" /> <label
+                for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+            <input type="submit" value="Send Message" />
+        </form>
+        <iframe width="425" height="300" class="map"
+            src="http://maps.google.com/maps?hl=ja&q=甲賀市水口町伴中山2545&amp;ie=UTF8&amp;z=14&amp;ll=甲賀市水口町伴中山2545&amp;output=embed"></iframe>
+        <div id="social-network">
+            <a href="#" target="_blank"><img
+                src="images/facebook.png" alt="Facebook" /></a> <a href="#"
+                target="_blank"><img src="images/flickr.png"
+                alt="Flicker" /></a> <a href="#" target="_blank"><img
+                src="images/linkedin.png" alt="Linkedin" /></a> <a href="#"
+                target="_blank"><img src="images/myspace.png"
+                alt="Myspace" /></a> <a href="#" target="_blank"><img
+                src="images/twitter.png" alt="Twitter" /></a>
+        </div>
+    </article>
+    <script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/pop-ups.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="js/cufon.js"></script>
+    <script type="text/javascript" src="js/Quicksand_Book_400.font.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <!-- Free template distributed by http://freehtml5templates.com -->
+</body>
+</html>
